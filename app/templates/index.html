@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Docker App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Flask + Docker</h1>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Enter name">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if name %}
+        <h2>Hello {{ name }}</h2>
+    {% endif %}
+</body>
+</html>
